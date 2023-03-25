@@ -4,12 +4,12 @@ import Carousel from "../../../components/carousel/Carousel";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import SwitchTabs from "../../../components/switchTabs/SwitchTabs";
 
-import useFetch from "../../../hooks/useFetch";
+import UseFetch from "../../../hooks/UseFetch";
 
 const TopRated = () => {
     const [endpoint, setEndpoint] = useState("movie");
 
-    const { data, loading } = useFetch(`/${endpoint}/top_rated`);
+    const { data, loading } = UseFetch(`/${endpoint}/top_rated`);
 
     const onTabChange = (tab) => {
         setEndpoint(tab === "Movies" ? "movie" : "tv");

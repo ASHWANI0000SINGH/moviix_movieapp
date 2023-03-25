@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import dayjs from "dayjs";
 
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
-import useFetch from "../../../hooks/useFetch";
+import UseFetch from "../../../hooks/UseFetch";
 import Genres from "../../../components/genres/Genres";
 import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadImage/Img.jsx";
@@ -18,7 +18,7 @@ const DetailsBanner = ({ video, crew }) => {
   const [show, setShow] = useState(false);
   const [videoId, setVideoId] = useState(null);
   const { mediaType, id } = useParams();
-  const { data, loading } = useFetch(`/${mediaType}/${id}`);
+  const { data, loading } = UseFetch(`/${mediaType}/${id}`);
   const { url } = useSelector((state) => state.homeSlice);
   // console.log(videoId);
   const _genres = data?.genres?.map((g) => g.id);
