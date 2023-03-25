@@ -96,6 +96,13 @@
                     // background-color: green;
 
                 }
+                @include x-sm {
+                    width: 80%;
+                    height: 60px;
+                    // font-size: 20px;
+                    // background-color: green;
+
+                }
             }
             button {
                 width: 100px;
@@ -116,6 +123,13 @@
                     width: 20%;
                     height: 60px;
                    
+
+                }
+                @include x-sm {
+                    width: 20%;
+                    height: 60px;
+                    // font-size: 20px;
+                    // background-color: green;
 
                 }
             }

@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin x-sm {
+    @media only screen and (min-width: 300px) {
+        @content;
+    }
+}
 
 @mixin md {
     @media only screen and (min-width: 768px) {
