@@ -41,7 +41,7 @@ function App() {
     const data = await Promise.all(promises);
     
     data.map(({ genres }) => {
-      console.log(genres)
+      // console.log(genres)
         return genres.map((item) => (allGenres[item.id] = item));
     });
 

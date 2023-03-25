@@ -20,7 +20,7 @@ const DetailsBanner = ({ video, crew }) => {
   const { mediaType, id } = useParams();
   const { data, loading } = useFetch(`/${mediaType}/${id}`);
   const { url } = useSelector((state) => state.homeSlice);
-  console.log(videoId);
+  // console.log(videoId);
   const _genres = data?.genres?.map((g) => g.id);
   // console.log(_genres);
 
