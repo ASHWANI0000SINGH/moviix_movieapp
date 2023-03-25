@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import UseFetch from "../../hooks/useFetch";
+import UseFetch from "../../hooks/UseFetch";
 import Recommendation from "./carousel/Recomendation";
 import Similar from "./carousel/Similar";
 import Cast from "./cast/Cast";
